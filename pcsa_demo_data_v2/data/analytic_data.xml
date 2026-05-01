@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="analytic_account_pcsa_demo" model="account.analytic.account">
+        <field name="name">PROJ-2026-001 - Machine Pharma Spécifique</field>
+    </record>
+</odoo>
