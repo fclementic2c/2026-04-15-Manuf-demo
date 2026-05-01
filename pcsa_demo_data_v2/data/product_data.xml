@@ -2,7 +2,7 @@
 <odoo>
     <record id="product_category_pcsa" model="product.category">
         <field name="name">Machines PCSA (FIFO)</field>
-        <field name="parent_id" ref="product.product_category_all"/>
+        <field name="parent_id" model="product.category" search="[]" limit="1"/>
         <field name="property_cost_method">fifo</field>
         <field name="property_valuation">real_time</field>
     </record>
