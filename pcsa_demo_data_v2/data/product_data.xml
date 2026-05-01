@@ -13,6 +13,13 @@
         <field name="categ_id" ref="product_category_pcsa"/>
     </record>
 
+    <record id="product_chassis_v1" model="product.product">
+        <field name="name">Sous-ensemble Châssis Inox - V1</field>
+        <field name="default_code">EC123-098-2100-V01</field>
+        <field name="type">consu</field>
+        <field name="categ_id" ref="product_category_pcsa"/>
+    </record>
+
     <record id="product_moteur_servo" model="product.product">
         <field name="name">Moteur Servo 400W</field>
         <field name="default_code">AC0042</field>
