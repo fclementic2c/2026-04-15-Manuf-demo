@@ -10,7 +10,7 @@
         Incorpore les conventions EC/AC/DIN et le suivi analytique.
     """,
     'author': 'Gemini for PCSA',
-    'depends': ['mrp', 'analytic', 'stock_account'],
+    'depends': ['mrp', 'analytic', 'stock_account', stock],
     'data': [
         'data/analytic_data.xml',
         'data/workcenter_data.xml',
