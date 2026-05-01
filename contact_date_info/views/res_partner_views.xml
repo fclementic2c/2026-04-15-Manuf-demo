@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_contact_date" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.contact.date</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//span[@name='title']" position="after">
+                <div class="oe_edit_only">
+                    <label for="contact_date" string="Contact Date"/>
+                </div>
+                <h2>
+                    <field name="contact_date" placeholder="Contact Date"/>
+                </h2>
+            </xpath>
+        </field>
+    </record>
+</odoo>
