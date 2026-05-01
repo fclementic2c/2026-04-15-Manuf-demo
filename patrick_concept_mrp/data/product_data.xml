@@ -1,0 +1,69 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Catégorie Valorisation FIFO / Real Time -->
+        <record id="cat_patrick_affaire" model="product.category">
+            <field name="name">Patrick Concept - Affaires</field>
+            <field name="property_cost_method">fifo</field>
+            <field name="property_valuation">real_time</field>
+        </record>
+
+        <!-- Articles Fabriqués (EC) -->
+        <record id="prod_ec_l1" model="product.product">
+            <field name="name">EC-MACHINE-ULTRA</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <record id="prod_ec_l2" model="product.product">
+            <field name="name">EC-SUB-L2-CHASSIS</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <record id="prod_ec_l3" model="product.product">
+            <field name="name">EC-SUB-L3-SUPPORT</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <record id="prod_ec_l4" model="product.product">
+            <field name="name">EC-SUB-L4-BRAS</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <record id="prod_ec_l5" model="product.product">
+            <field name="name">EC-SUB-L5-AXE</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <record id="prod_ec_l6" model="product.product">
+            <field name="name">EC-SUB-L6-PLATINE</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <record id="prod_ec_l7" model="product.product">
+            <field name="name">EC-SUB-L7-BASE</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+        </record>
+
+        <!-- Articles Achetés (AC) -->
+        <record id="prod_ac_moteur" model="product.product">
+            <field name="name">AC-MOTEUR-SPEC-PATRICK</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+            <field name="standard_price">1250.0</field>
+        </record>
+
+        <!-- Articles Catalogue (DIN) -->
+        <record id="prod_din_vis" model="product.product">
+            <field name="name">DIN-VIS-M8-INOX-A2</field>
+            <field name="type">consu</field>
+            <field name="categ_id" ref="cat_patrick_affaire"/>
+            <field name="standard_price">0.45</field>
+        </record>
+    </data>
+</odoo>

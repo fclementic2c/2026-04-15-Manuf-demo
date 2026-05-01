@@ -1,0 +1,9 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Recherche du premier plan disponible pour conformité Odoo 19 -->
+        <record id="pc_analytic_account_001" model="account.analytic.account">
+            <field name="name">PC-2026-001 - Machine Spéciale Patrick Concept</field>
+            <field name="plan_id" model="account.analytic.plan" eval="obj(model='account.analytic.plan').search([], limit=1).id"/>
+        </record>
+    </data>
+</odoo>

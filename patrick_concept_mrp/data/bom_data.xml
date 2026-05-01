@@ -1,0 +1,62 @@
+<odoo>
+    <data noupdate="1">
+        <!-- BOM L1 (Top) -->
+        <record id="bom_l1" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l1_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[(0,0, {'product_id': ref('prod_ec_l2'), 'product_qty': 1})]"/>
+        </record>
+
+        <!-- BOM L2 -->
+        <record id="bom_l2" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l2_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[(0,0, {'product_id': ref('prod_ec_l3'), 'product_qty': 1})]"/>
+        </record>
+
+        <!-- BOM L3 -->
+        <record id="bom_l3" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l3_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[(0,0, {'product_id': ref('prod_ec_l4'), 'product_qty': 1})]"/>
+        </record>
+
+        <!-- BOM L4 -->
+        <record id="bom_l4" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l4_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[(0,0, {'product_id': ref('prod_ec_l5'), 'product_qty': 1})]"/>
+        </record>
+
+        <!-- BOM L5 -->
+        <record id="bom_l5" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l5_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[(0,0, {'product_id': ref('prod_ec_l6'), 'product_qty': 1})]"/>
+        </record>
+
+        <!-- BOM L6 -->
+        <record id="bom_l6" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l6_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[(0,0, {'product_id': ref('prod_ec_l7'), 'product_qty': 1})]"/>
+        </record>
+
+        <!-- BOM L7 (Base) -->
+        <record id="bom_l7" model="mrp.bom">
+            <field name="product_tmpl_id" ref="prod_ec_l7_product_template"/>
+            <field name="product_qty">1</field>
+            <field name="type">normal</field>
+            <field name="bom_line_ids" eval="[
+                (0,0, {'product_id': ref('prod_ac_moteur'), 'product_qty': 1}),
+                (0,0, {'product_id': ref('prod_din_vis'), 'product_qty': 50})
+            ]"/>
+        </record>
+    </data>
+</odoo>
